@@ -10,42 +10,6 @@ import pydeck as pdk
 import joblib
 model = joblib.load("maternal_risk_model.pkl")
 
-# ⚠️ MISSING / CAN IMPROVE (HIGH IMPACT)
-# 🔥 1. Link ALL modules together (VERY IMPORTANT)
-
-# Right now:
-
-# Maternal module = separate
-# Facility matching = separate
-
-# 👉 Improve:
-
-# Auto-send critical patient → best facility instantly
-
-# 🔥 2. Add “ONE FINAL DECISION OUTPUT”
-
-# Instead of multiple sections, show:
-
-# 🚨 “Patient is Critical → Send to X Hospital in 18 mins”
-
-# 🔥 3. Add “Delay Reduction Indicator”
-
-# Explicitly show:
-
-# Time to decision
-# Time to facility
-# Risk of delay
-
-# 👉 This directly ties to your problem statement
-
-# 🔥 4. Real-Time Alert System (Dashboard)
-
-# Example:
-
-# “⚠ Anemia cluster detected in District C”
-# “⚠ Dengue risk rising”
-
-# 👉 Makes it feel like a government tool
 
 st.set_page_config(page_title="RuralShield", layout="wide")
 button_style = """
